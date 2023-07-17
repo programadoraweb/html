@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <div>
+      <p>table - to create a table</p>
+      <p>caption - add a table title th</p>
+      <p>th - table header</p>
+      <p>tr - table row, a line</p>
+      <p>td - table data - table cel</p>
+      <p>
+        colspan - attribute which defines how many cells will be binded
+        vertically
+      </p>
+      <p>
+        colspan - attribute which defines how many cells will be binded
+        horizontally
+      </p>
+    </div>
+    <table border="1" width="100%">
+      <caption>
+        Table 1 Title
+      </caption>
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+          <th>Column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td bgcolor="lightblue" colspan="2">Row 1 Cell #1</td>
+          <td>Row 1 Cell #3</td>
+          <td>Row 1 Cell #4</td>
+        </tr>
+        <tr>
+          <td>Row 2 Cell #1</td>
+          <td>Row 2 Cell #2</td>
+          <td bgcolor="lightblue" colspan="2">Row 2 Cell #3</td>
+        </tr>
+        <tr>
+          <td bgcolor="lightblue" rowspan="2" colspan="2">Row 3 Cell #1</td>
+          <td>Row 3 Cell #3</td>
+          <td>Row 3 Cell #4</td>
+        </tr>
+        <tr>
+          <td>Row 4 Cell #3</td>
+          <td>Row 4 Cell #4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Footer Title 1</th>
+          <th>Footer Title 2</th>
+          <th>Footer Title 3</th>
+          <th>Footer Title 4</th>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <table border="1" style="width: 50%">
+      <caption>
+        Table 2 Title
+      </caption>
+      <!-- Con Col, decimos cuantos % de la tabla ocupa cada columna: -->
+      <colgroup>
+        <col style="width: 30%" />
+        <col style="width: 30%" />
+        <col style="width: 40%" />
+        <!--  with col style we are defining the % of space for each column  -->
+      </colgroup>
+      <tr>
+        <td>Clase A</td>
+        <td>Clase B</td>
+        <td>Clase C</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background: lightcoral">X</td>
+        <td rowspan="2" style="background: lightblue">Y</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+    </table>
+  </body>
+</html>
