@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Get</title>
+  </head>
+  <body>
+    <p>
+      GET method is the most insecure method of sending data. It is 100%
+      insecure
+    </p>
+    <p>
+      with GET we can see on the url what was typed on the input field when we
+      enter the submit button:
+      http://127.0.0.1:5501/form_get.html?firstname=Ingrid+&lastname=Silva
+    </p>
+
+    <form action="#" method="GET">
+      <input type="text" name="firstname" placeholder="first name" />
+      <input type="text" name="lastname" placeholder="last name" />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="textarea"
+      ></textarea>
+      <select name="" id="">
+        <option value="">option 1</option>
+        <option value="">option 2</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
