@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video
+      width="360"
+      height="360"
+      controls
+      loop
+      poster="poster-image.jpg"
+      autoplay="true"
+      muted
+    >
+      <!-- control - without control we can t see the video -->
+      <!-- loop will play the video over and over again -->
+      <!-- poster - will show you a poster before the video starts -->
+      <source src="video.mp4" type="video/mp4" />
+      <!-- <source src="video.ogg" type="video/ogg"> -->
+      <p>
+        Unfortunatelly, you dont have an HTML5 enabled browser
+        <!--  If you are on a PC with a browser that does not support
+      a video, you will see see this mesage -->
+      </p>
+    </video>
+  </body>
+</html>
