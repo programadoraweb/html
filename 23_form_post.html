@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Post</title>
+  </head>
+  <body>
+    <p>
+      POST method is more seccure, it does not show variables in the URL bar
+    </p>
+    <p>action is where we will send the data, another file</p>
+    <hr />
+    <form action="23_action.html" method="POST" autocomplete="off">
+      <p>
+        <label for="firstName">First Name </label>
+        <!--  the attribute for from label should match the input id  -->
+        <input
+          type="text"
+          id="name"
+          name="firstname"
+          placeholder="first name"
+          size="30"
+          maxlength="10"
+          required
+          autofocus
+        />
+      </p>
+
+      <p>
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastname"
+          placeholder="last name"
+          size="30"
+          maxlength="10"
+          required
+          autofocus
+        />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          size="30"
+          required
+          autofocus
+          placeholder="introduce your password in here"
+        />
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          autofocus
+          placeholder="introduce your email in here"
+          pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"
+        />
+      </p>
+      <p>
+        <label for="url">url</label>
+        <input
+          type="url"
+          id="url"
+          name="url"
+          value="https://www.w3schools.com/"
+          required
+        />
+      </p>
+      <p>
+        <label for="readOnly">Read Only </label>
+        <input
+          type="text"
+          id="readOnly"
+          name="readOnly"
+          value="Read Only"
+          readonly
+        />
+      </p>
+      <p>
+        <label for="number">Number</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="0"
+          max="24"
+          step="0.5"
+        />
+      </p>
+      <p>
+        <label for="checkboxField">Checkbox</label>
+        <input
+          required="required"
+          type="checkbox"
+          value="1"
+          name="checkbox"
+          id="one"
+        />
+        <input
+          required="required"
+          type="checkbox"
+          value="1"
+          name="checkbox"
+          id="two"
+        />
+        <input
+          required="required"
+          type="checkbox"
+          value="1"
+          name="checkbox"
+          id="three"
+        />
+        <!--CHECKBOX are the same as Radio Button, the only difference as you can choose more than one time. Radio Button you can only choose one time -->
+      </p>
+      <p>
+        <label>Radio buttons</label>
+        <input required="required" type="radio" name="radioButton" value="1" />
+        1
+        <input required="required" type="radio" name="radioButton" value="2" />
+        2
+        <input required="required" type="radio" name="radioButton" value="3" />
+        3
+        <!--All related radio buttons should have the same NAME attribute -->
+      </p>
+      <p>
+        <select name="" id="" required multiple size="3">
+          <option value="">option 1</option>
+          <option value="">option 2</option>
+          <option value="">option 3</option>
+          <option value="">option 4</option>
+          <option value="">option 5</option>
+          <option value="">option 6</option>
+        </select>
+      </p>
+      <p>
+        <select name="" id="" required>
+          <option value="" disabled="disabled" selected="selected">
+            -- Select Item --
+          </option>
+          <option value="">option 1</option>
+          <option value="">option 2</option>
+          <option value="">option 3</option>
+          <option value="">option 4</option>
+        </select>
+      </p>
+      <hr />
+      <p>
+        We can have options inside the data list, so the search bar will give us
+        options:
+      </p>
+      <p>
+        <label for="">Select your country:</label>
+        <input type="text" id="country" list="countries" />
+        <datalist id="countries">
+          <option value="Spain" />
+          <option value="Brazil" />
+          <option value="Argentina" />
+          <option value="England" />
+          <option value="Colombia" />
+          <option value="USA" />
+        </datalist>
+      </p>
+      <hr />
+      <p>
+        <label for="calendar">Calendar</label>
+        <input type="date" id="calendar" name="date" required="required" />
+      </p>
+      <p>
+        <label for="tel">Telephone Number</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{9}" />
+      </p>
+
+      <p>
+        <label for="datetime">Datetime</label>
+        <input type="datetime" id="datetime" name="datetime" />
+      </p>
+      <p>
+        <label for="month">month</label>
+        <input type="month" id="month" name="month" />
+      </p>
+      <p>
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" />
+      </p>
+      <p>
+        <label for="range">Range</label>
+        <input type="range" id="range" name="range" min="0" max="20" step="2" />
+      </p>
+      <p>
+        <label for="Color">Color</label>
+        <input type="color" id="color" name="color" />
+      </p>
+      <p>
+        <label for="search">Search</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          autocomplete="on"
+          autofocus
+        />
+      </p>
+      <hr />
+      <p>
+        Hidden - it wont show because its hidden !!
+        <input required="required" type="hidden" name="hidden" value="hidden" />
+      </p>
+      <hr />
+      <p>with the attribute accept, we can choose file types we can accept.</p>
+      <p>
+        <label for="fileType">File</label>
+        <input
+          type="file"
+          name="fileType"
+          id="fileType"
+          accept=".pdf, image/*"
+          multiple
+        />
+      </p>
+      <hr />
+      <p>
+        <label for="addText">Additional Text</label>
+        <textarea
+          name="addText"
+          id="addText"
+          cols="30"
+          rows="10"
+          placeholder="textarea"
+          required
+          minlength="10"
+          maxlength="100"
+          autofocus
+        ></textarea>
+      </p>
+
+      <hr />
+
+      <input type="submit" value="Submit" required name="submit" />
+      <!--  <button type="submit">Submit</button> -->
+    </form>
+  </body>
+</html>
